@@ -27,24 +27,24 @@ struct SignInView: View {
     var body: some View {
         ZStack{
 //            Color.black
-            LinearGradient(colors: [settings.firstColor.opacity(0.3), settings.secondColor.opacity(0.5)],
+            LinearGradient(colors: [settings.firstColor.opacity(0.9), settings.secondColor.opacity(0.5)],
                                                   startPoint: .topLeading,
                                                   endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
 //            (spacing: 60)
             VStack{
                 Spacer()
-                Image(systemName: "apple.meditate.square.stack")
-                    .resizable()
-                    .frame(maxWidth: screenWidth * 0.8, maxHeight: screenWidth * 0.8)
-                    .scaledToFit()
-                    .foregroundColor(.minorva_blue)
-                    .clipped()
-                    .puffEffect()
+//                Image(systemName: "apple.meditate.square.stack")
+//                    .resizable()
+//                    .frame(maxWidth: screenWidth * 0.8, maxHeight: screenWidth * 0.8)
+//                    .scaledToFit()
+//                    .foregroundColor(.minorva_blue)
+//                    .clipped()
+//                    .puffEffect()
                 
                 Text(settings.isEnglish ? "Welcome to Minorva" : "Minorvaへようこそ")
                     .font(.largeTitle)
-                    .foregroundColor(.minorva_blue)
+                    .foregroundColor(.white)
                     .frame(maxWidth: 360)
                     .multilineTextAlignment(.center)
                 
@@ -101,7 +101,7 @@ struct SignInView: View {
         .sheet(isPresented: $showEmailSignIn) {
             SignInWithEmailView(showName: $showName, showEmailSignIn: $showEmailSignIn)
                 .padding()
-                .presentationBackground(LinearGradient(gradient: Gradient(colors: [settings.firstColor.opacity(0.3), settings.secondColor.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing))
+                .presentationBackground(LinearGradient(gradient: Gradient(colors: [settings.firstColor.opacity(0.6), settings.secondColor.opacity(0.2)]), startPoint: .topLeading, endPoint: .bottomTrailing))
                 .edgesIgnoringSafeArea(.all)
         }
     }

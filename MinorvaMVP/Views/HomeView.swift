@@ -29,7 +29,7 @@ struct HomeView: View {
     
     var body: some View {
         ZStack{
-            LinearGradient(colors: [settings.firstColor.opacity(0.3), settings.secondColor.opacity(0.5)],
+            LinearGradient(colors: [settings.home_firstColor.opacity(0.6), settings.home_secondColor.opacity(0.5)],
                                                   startPoint: .topLeading,
                                                   endPoint: .bottomTrailing)
             .ignoresSafeArea()

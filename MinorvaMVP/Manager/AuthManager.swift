@@ -29,6 +29,12 @@ final class AuthManager{
     static let shared = AuthManager()
     let auth = Auth.auth()
     
+    let firebase_clientid : String?
+    
+    private init() { 
+        self.firebase_clientid = Bundle.main.object(forInfoDictionaryKey: "ENV_FIREBASE_CLIENTID") as? String
+//        print("AuthのFirebaseClientIDの出力：\(firebase_clientid ?? "nil")")
+    }
     
     func signInWithEmail(email: String, password: String, completion: @escaping (Result<User, Error>) -> Void) {
         auth.signIn(withEmail: email, password: password) { result, error in
@@ -60,7 +66,9 @@ final class AuthManager{
     }
     
     func signInWithGoogle(completion: @escaping (Result<User, GoogleSignInError>) -> Void) {
-        let clientID = ""
+        let clientID = firebase_clientid ?? ""
+        
+        print(clientID)
         
         let config = GIDConfiguration(clientID: clientID)
         GIDSignIn.sharedInstance.configuration = config

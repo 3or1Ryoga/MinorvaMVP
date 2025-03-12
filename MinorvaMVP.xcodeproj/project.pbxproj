@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5C1908082D7C2DE2002A1CAF /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C1908072D7C2DE2002A1CAF /* SDWebImageSwiftUI */; };
 		5C7F19AA2D7D288700E05BA7 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 5C7F19A92D7D288700E05BA7 /* OpenAI */; };
+		5CB5EACB2D812B6E00EAB61C /* Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5CB5EACA2D812B6E00EAB61C /* Config.xcconfig */; };
 		5CFC85EF2D76FA810061D547 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFC85EE2D76FA810061D547 /* FirebaseAnalytics */; };
 		5CFC85F12D76FA810061D547 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFC85F02D76FA810061D547 /* FirebaseAuth */; };
 		5CFC85F32D76FA810061D547 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5CFC85F22D76FA810061D547 /* FirebaseCore */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5CB5EACA2D812B6E00EAB61C /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		5CFC85AD2D76EC370061D547 /* MinorvaMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MinorvaMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CFC85BE2D76EC380061D547 /* MinorvaMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinorvaMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CFC85C82D76EC380061D547 /* MinorvaMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinorvaMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 		5CFC85A42D76EC370061D547 = {
 			isa = PBXGroup;
 			children = (
+				5CB5EACA2D812B6E00EAB61C /* Config.xcconfig */,
 				5CFC85AF2D76EC370061D547 /* MinorvaMVP */,
 				5CFC85C12D76EC380061D547 /* MinorvaMVPTests */,
 				5CFC85CB2D76EC380061D547 /* MinorvaMVPUITests */,
@@ -270,6 +273,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB5EACB2D812B6E00EAB61C /* Config.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +333,7 @@
 /* Begin XCBuildConfiguration section */
 		5CFC85D02D76EC380061D547 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB5EACA2D812B6E00EAB61C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -390,6 +395,7 @@
 		};
 		5CFC85D12D76EC380061D547 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CB5EACA2D812B6E00EAB61C /* Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

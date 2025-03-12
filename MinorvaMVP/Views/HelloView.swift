@@ -27,7 +27,7 @@ struct HelloView: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                LinearGradient(colors: [settings.firstColor.opacity(0.3), settings.secondColor.opacity(0.5)],
+                LinearGradient(colors: [settings.firstColor.opacity(0.9), settings.secondColor.opacity(0.5)],
                                                       startPoint: .topLeading,
                                                       endPoint: .bottomTrailing)
                     .edgesIgnoringSafeArea(.all)

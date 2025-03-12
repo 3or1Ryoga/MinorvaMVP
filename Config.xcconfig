@@ -1,0 +1,16 @@
+//
+//  Config.xcconfig
+//  MinorvaMVP
+//
+//  Created by Ryoga Sakai on 2025/03/12.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//FIREBASE_CLIENTID=https:/$()/818819425525-oqql52i9f18k6i2mnn693o0r22r9vs1o.apps.googleusercontent.com/
+
+FIREBASE_CLIENTID=818819425525-oqql52i9f18k6i2mnn693o0r22r9vs1o.apps.googleusercontent.com
+
+
+

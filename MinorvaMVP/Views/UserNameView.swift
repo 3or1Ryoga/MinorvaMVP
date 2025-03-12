@@ -26,7 +26,7 @@ struct UserNameView: View {
     
     var body: some View {
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [settings.firstColor.opacity(0.3), settings.secondColor.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(gradient: Gradient(colors: [settings.firstColor.opacity(0.9), settings.secondColor.opacity(0.5)]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
             
             VStack(spacing: 20){

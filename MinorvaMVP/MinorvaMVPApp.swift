@@ -63,13 +63,23 @@ class AppSettings : ObservableObject{
         }
     }
     
-    @Published var firstColor = Color(red: 56/255, green: 182/255, blue: 255/255)
-    @Published var secondColor = Color(red: 227/255, green: 249/255, blue: 227/255)
+//    @Published var firstColor = Color(red: 56/255, green: 182/255, blue: 255/255)
+//    @Published var secondColor = Color(red: 227/255, green: 249/255, blue: 227/255)
+    @Published var firstColor = Color(red: 30/255, green: 160/255, blue: 255/255)  // より濃い青
+    @Published var secondColor = Color(red: 200/255, green: 240/255, blue: 200/255)  // より深い緑
+
+    
+    @Published var home_firstColor = Color(red: 56/255, green: 182/255, blue: 255/255)
+    @Published var home_secondColor = Color(red: 227/255, green: 249/255, blue: 227/255)
 
     private var cancellableEnglish: AnyCancellable?
     private var cancellableTutorial: AnyCancellable?
+    
+    
+    
 
     init() {
+        
         self.isEnglish = UserDefaults.standard.bool(forKey: "isEnglish")
 //        self.isTutorialCompleted = UserDefaults.standard.bool(forKey: "isTutorialCompleted")
         if UserDefaults.standard.object(forKey: "isTutorialCompleted") == nil {

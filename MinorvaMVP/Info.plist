@@ -15,5 +15,9 @@
 			</array>
 		</dict>
 	</array>
+	<key>ENV_API_TOKEN</key>
+	<string>$(API_TOKEN)</string>
+	<key>ENV_FIREBASE_CLIENTID</key>
+	<string>$(FIREBASE_CLIENTID)</string>
 </dict>
 </plist>

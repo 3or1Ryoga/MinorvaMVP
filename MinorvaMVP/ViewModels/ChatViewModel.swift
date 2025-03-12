@@ -40,10 +40,16 @@ import OpenAI
 
 class ChatViewModel: ObservableObject {
     
-    let openAI = OpenAI(apiToken: "")
+    var openAI = OpenAI(apiToken: "")
     @Published var responseText: String = "ここにレスポンスが表示されます"
 
+    let api_token : String?
     
+    init() {
+        self.api_token = Bundle.main.object(forInfoDictionaryKey: "ENV_API_TOKEN") as? String
+        print("API tokenの出力：\(api_token ?? "nil")")
+        openAI = OpenAI(apiToken: api_token ?? "nil")
+    }
     
     @MainActor
     func analyzeUserInput(message: String, visions: [Vision]) async {
